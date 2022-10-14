@@ -71,3 +71,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Wwise
+WWiseProject/.cache/
+WWiseProject/*.prof
+WwiseProject/*_WwiseProject.*.validationcache
+WwiseProject/*_WwiseProject.*.wsettings
+WwiseProject/**/*.akd
+WwiseUnityIntegration_*_Src.zip
+
+# WWise Pickere Work Unit files.
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*

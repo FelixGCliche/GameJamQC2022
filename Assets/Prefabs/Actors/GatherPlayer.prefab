@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 549086119630950246, guid: dcc8dc127f8147a479fc21747dd66222,
         type: 3}
       propertyPath: m_Name
-      value: GatherPlayer
+      value: gathererPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1805742449152981114, guid: dcc8dc127f8147a479fc21747dd66222,
         type: 3}

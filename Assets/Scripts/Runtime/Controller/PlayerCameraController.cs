@@ -1,3 +1,5 @@
+using System;
+using UnityEditor.Rendering.HighDefinition;
 using UnityEngine;
 
 namespace Runtime.Controller
@@ -12,6 +14,12 @@ namespace Runtime.Controller
         private Transform playerTransform;
         
         private Vector3 cameraOffset;
+        private Quaternion initialRotation;
+
+        private void Awake()
+        {
+            initialRotation = transform.rotation;
+        }
 
         private void Start()
         {
@@ -20,6 +28,7 @@ namespace Runtime.Controller
 
         private void LateUpdate()
         {
+            transform.rotation = initialRotation;
             var newPos = playerTransform.position + cameraOffset;
             transform.position = Vector3.Slerp(transform.position, newPos, smoothing);
         }

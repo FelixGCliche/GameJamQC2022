@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Runtime.Enum;
 using Runtime.Generator;
+using Runtime.Utils;
 using UnityEngine;
 
 namespace Runtime.Terrain
@@ -40,7 +41,6 @@ namespace Runtime.Terrain
     private Mesh grassMesh;
     private Mesh dirtMesh;
     private TerrainBlock[,] blocks;
-    private TerrainGenerator terrainGenerator;
 
     private void Awake()
     {
@@ -48,14 +48,6 @@ namespace Runtime.Terrain
       terrainBase = CreateTerrainBaseMesh(TerrainBaseName);
       grassMesh = CreateEmptyTerrainMesh(GrassTerrainName, grassMaterial);
       dirtMesh = CreateEmptyTerrainMesh(DirtTerrainName, dirtMaterial);
-
-      if (!TryGetComponent(out terrainGenerator))
-        terrainGenerator = gameObject.AddComponent<TerrainGenerator>();
-    }
-
-    private void Start()
-    {
-      terrainGenerator.Generate();
     }
 
     private void OnEnable()
@@ -89,7 +81,12 @@ namespace Runtime.Terrain
 
     private Mesh CreateEmptyTerrainMesh(string meshName, Material meshMaterial)
     {
-      var meshGameObject = new GameObject(meshName);
+      var meshGameObject = new GameObject
+      {
+        name = meshName,
+        layer = Layers.Terrain
+      };
+
       var meshTransform = meshGameObject.transform;
       meshTransform.parent = terrainRoot.transform;
 
@@ -100,12 +97,16 @@ namespace Runtime.Terrain
       var meshRenderer = meshGameObject.AddComponent<MeshRenderer>();
       meshRenderer.material = meshMaterial;
 
+      meshGameObject.AddComponent<MeshCollider>();
+      
+
       return mesh;
     }
 
     private GameObject CreateTerrainBaseMesh(string meshName)
     {
       var meshGameObject = GameObject.CreatePrimitive(PrimitiveType.Quad);
+      meshGameObject.layer = Layers.Terrain;
       meshGameObject.name = meshName;
       meshGameObject.transform.parent = terrainRoot.transform;
       meshGameObject.transform.Rotate(-90, 0, 0);

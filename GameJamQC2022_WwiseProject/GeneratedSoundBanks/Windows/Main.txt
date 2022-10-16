@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1699343283	Play_Music_Menu			\Default Work Unit\Play_Music_Menu	
+	2549704765	Play_Voice_Line			\Default Work Unit\Play_Voice_Line	
+	2595518563	Play_Gathering_Tombe			\Default Work Unit\Play_Gathering_Tombe	
+	2974470319	Play_Loot_Rocks			\Default Work Unit\Play_Loot_Rocks	
+	3459306323	Stop_Gathering			\Default Work Unit\Stop_Gathering	
+	4060562849	Play_Gathering_Citrouille_Start			\Default Work Unit\Play_Gathering_Citrouille_Start	
+	4173997865	Play_Loot_Worms			\Default Work Unit\Play_Loot_Worms	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	40326321	Incantation_Heal	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Incantation_Heal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice_Line\Incantation_Heal		1376064
+	52942692	Gathering_Citrouille_End_01	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_End_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Loot_Worms\Gathering_Citrouille_End_01		81772
+	145269413	Gathering_Citrouille_Start_04	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_Start_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Citrouille_Start\Play_Gathering_Citrouille_Start\Gathering_Citrouille_Start_04		35640
+	224434560	Loot_Rock_01	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Loot_Rock_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loot_Rock\Loot_Rock_01		49020
+	227529511	Incantation_Speed	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Incantation_Speed_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice_Line\Incantation_Speed		1440920
+	245790339	Gathering_Citrouille_Start_02	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_Start_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Citrouille_Start\Play_Gathering_Citrouille_Start\Gathering_Citrouille_Start_02		39436
+	260993076	Gathering_Citrouille_Start_05	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_Start_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Citrouille_Start\Play_Gathering_Citrouille_Start\Gathering_Citrouille_Start_05		51264
+	283243980	Gathering_Tombe_04	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Tombe_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Tombe\Play_Gathering_Tombe\Gathering_Tombe_04		59818
+	313736213	Gathering_Citrouille_Start_03	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_Start_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Citrouille_Start\Play_Gathering_Citrouille_Start\Gathering_Citrouille_Start_03		51264
+	328949923	Music_Menu	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Music_Menu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music_Menu		12480064
+	336901510	Gathering_Tombe_03	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Tombe_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Tombe\Play_Gathering_Tombe\Gathering_Tombe_03		59434
+	355346067	Loot_Rock_02	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Loot_Rock_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loot_Rock\Loot_Rock_02		49470
+	518138631	Gathering_Tombe_05	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Tombe_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Tombe\Play_Gathering_Tombe\Gathering_Tombe_05		58758
+	563686103	Gathering_Citrouille_End_03	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_End_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Loot_Worms\Gathering_Citrouille_End_03		82184
+	602854353	Incantation_DPS	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Incantation_DPS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice_Line\Incantation_DPS		1286916
+	653348733	Gathering_Tombe_02	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Tombe_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Tombe\Play_Gathering_Tombe\Gathering_Tombe_02		58374
+	721138727	Gathering_Tombe_01	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Tombe_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Tombe\Play_Gathering_Tombe\Gathering_Tombe_01		58732
+	723033570	Gathering_Citrouille_Start_01	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_Start_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Gathering_Citrouille_Start\Play_Gathering_Citrouille_Start\Gathering_Citrouille_Start_01		48064
+	820116513	Gathering_Citrouille_End_02	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Gathering_Citrouille_End_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Play_Loot_Worms\Gathering_Citrouille_End_02		80350
+	1029345244	Loot_Rock_03	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Loot_Rock_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loot_Rock\Loot_Rock_03		48568
+	1055847135	Incantation_Shield	Y:\Desktop\GameJamQC2022\GameJamQC2022_WwiseProject\.cache\Windows\SFX\Incantation_Shield_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Voice_Line\Incantation_Shield		1593664
+

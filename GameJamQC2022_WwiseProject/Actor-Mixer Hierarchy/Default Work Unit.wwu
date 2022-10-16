@@ -1,6 +1,759 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}" SchemaVersion="103">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Music_Menu" ID="{C44444BE-0DB9-44A3-BB70-D4DDBD288EEE}" ShortID="969271921">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Music_Menu" ID="{A20248AC-F4A3-40A7-ADF0-D26B69D709B8}">
+							<Language>SFX</Language>
+							<AudioFile>Music_Menu.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="328949923"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Music_Menu" ID="{A20248AC-F4A3-40A7-ADF0-D26B69D709B8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Play_Gathering_Tombe" ID="{271D430F-0F4B-47BF-9B61-8A19680032F9}" ShortID="536151083">
+					<PropertyList>
+						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Play_Gathering_Tombe" ID="{AA5EE3CD-13FA-4EB4-B92C-84EC3A6083C9}" ShortID="987251831">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{736E6A71-EB3E-42DF-B84A-FB53A9E32CF2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5EA19CF8-32FB-4573-9730-7CCC3AE4FE4B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Gathering_Tombe_01" ID="{9FCC14A1-F595-423B-B1DC-E505A0D42B86}" ShortID="714933226">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Tombe_01" ID="{CC3828FF-0D59-4D0B-8016-A0CC1F665412}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Tombe_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="721138727"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Tombe_01" ID="{CC3828FF-0D59-4D0B-8016-A0CC1F665412}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Tombe_02" ID="{1A4D8FFA-134F-426C-919A-B2F1753DCBC8}" ShortID="973289519">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Tombe_02" ID="{C4F32633-5F10-4200-8540-EAE8454B3BEA}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Tombe_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="653348733"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Tombe_02" ID="{C4F32633-5F10-4200-8540-EAE8454B3BEA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Tombe_03" ID="{E7B7CFEB-8B5F-4CA2-8C4C-45881D59419F}" ShortID="217305617">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Tombe_03" ID="{99F1C1AF-FF3F-4D4E-8688-8BAA5498A54D}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Tombe_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="336901510"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Tombe_03" ID="{99F1C1AF-FF3F-4D4E-8688-8BAA5498A54D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Tombe_04" ID="{EB22D42E-D49A-4958-9E5F-3E091AC688C1}" ShortID="768515032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Tombe_04" ID="{51C922BB-91D5-4D33-8A10-7363FAE1EA6B}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Tombe_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="283243980"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Tombe_04" ID="{51C922BB-91D5-4D33-8A10-7363FAE1EA6B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Tombe_05" ID="{3007361C-B27A-4E09-B998-469C51FE43BE}" ShortID="453363774">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Tombe_05" ID="{C74131C0-EA76-4524-BD5F-297C5FC0E476}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Tombe_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="518138631"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Tombe_05" ID="{C74131C0-EA76-4524-BD5F-297C5FC0E476}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="Play_Gathering_Tombe" ID="{AA5EE3CD-13FA-4EB4-B92C-84EC3A6083C9}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Play_Gathering_Citrouille_Start" ID="{F5D74C3B-1007-49C3-AD1B-A49055D6B98A}" ShortID="831113926">
+					<PropertyList>
+						<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Play_Gathering_Citrouille_Start" ID="{83FD6906-FEF7-4B3F-8EF6-75DFBDF0EF8D}" ShortID="988725127">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{29210B8C-B64F-49B8-944C-FD9BBC86BF21}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="150"/>
+													<Property Name="Min" Type="Real64" Value="-150"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E1A90ED5-1DD6-4797-BBE1-1131FC508E9C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-3"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Gathering_Citrouille_Start_01" ID="{BAC3E58F-1249-477F-B359-2FFEB83F9F42}" ShortID="586442269">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Citrouille_Start_01" ID="{43EFF582-A0B8-4EA5-AF1C-FCAA864AD6DF}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Citrouille_Start_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="723033570"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Citrouille_Start_01" ID="{43EFF582-A0B8-4EA5-AF1C-FCAA864AD6DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Citrouille_Start_02" ID="{3DB38905-C762-4DC4-AC70-CEC019C090A9}" ShortID="559178908">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Citrouille_Start_02" ID="{0AA12D09-3C5D-4CE8-AFC5-C1D784A2D315}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Citrouille_Start_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="245790339"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Citrouille_Start_02" ID="{0AA12D09-3C5D-4CE8-AFC5-C1D784A2D315}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Citrouille_Start_03" ID="{BFEB38F0-D155-4A99-8675-64BE3BA90752}" ShortID="592945818">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Citrouille_Start_03" ID="{7B72029E-C8A0-418E-884E-DC203C0E299E}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Citrouille_Start_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="313736213"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Citrouille_Start_03" ID="{7B72029E-C8A0-418E-884E-DC203C0E299E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Citrouille_Start_04" ID="{1DF26581-B0B8-47B7-9936-AE14D22E624B}" ShortID="634652886">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Citrouille_Start_04" ID="{1BB0F022-151B-4C90-B23A-A3693D13FC8E}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Citrouille_Start_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="145269413"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Citrouille_Start_04" ID="{1BB0F022-151B-4C90-B23A-A3693D13FC8E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Gathering_Citrouille_Start_05" ID="{B56AE74D-C6E1-42F6-AB22-A983AC944618}" ShortID="49861188">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gathering_Citrouille_Start_05" ID="{6F932A59-7BF8-4523-88D9-9E871F9F6A28}">
+											<Language>SFX</Language>
+											<AudioFile>Gathering_Citrouille_Start_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260993076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Gathering_Citrouille_Start_05" ID="{6F932A59-7BF8-4523-88D9-9E871F9F6A28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+					<Playlist>
+						<ItemRef Name="Play_Gathering_Citrouille_Start" ID="{83FD6906-FEF7-4B3F-8EF6-75DFBDF0EF8D}"/>
+					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Play_Loot_Worms" ID="{9215CD43-3866-48F3-9825-FE39E6A800C1}" ShortID="111020636">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{91704F8A-24D8-4E08-B2D0-518B227BDD4D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{0CDD85E5-48BC-4B80-8ABC-27CCD978FD1D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Gathering_Citrouille_End_01" ID="{729F4DA6-6F0A-41F6-8652-ED068C7B8480}" ShortID="136716710">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gathering_Citrouille_End_01" ID="{D287001B-8CC8-4569-8F79-3A4F7835A7BD}">
+									<Language>SFX</Language>
+									<AudioFile>Gathering_Citrouille_End_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="52942692"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Gathering_Citrouille_End_01" ID="{D287001B-8CC8-4569-8F79-3A4F7835A7BD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gathering_Citrouille_End_02" ID="{6162BB72-E3BC-4329-8E43-CEBFEF92FF52}" ShortID="1031233216">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gathering_Citrouille_End_02" ID="{142A23D6-88D3-419B-892D-DF4729854484}">
+									<Language>SFX</Language>
+									<AudioFile>Gathering_Citrouille_End_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="820116513"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Gathering_Citrouille_End_02" ID="{142A23D6-88D3-419B-892D-DF4729854484}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Gathering_Citrouille_End_03" ID="{003B23EF-6CC3-495F-97F6-5B7E2670A3FE}" ShortID="574681460">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gathering_Citrouille_End_03" ID="{116FFD62-5A02-4DE4-81C4-F6F45EAFA2EE}">
+									<Language>SFX</Language>
+									<AudioFile>Gathering_Citrouille_End_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="563686103"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Gathering_Citrouille_End_03" ID="{116FFD62-5A02-4DE4-81C4-F6F45EAFA2EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Voice_Line" ID="{390517B6-11F4-40B8-9DFA-B44EE6C4CE51}" ShortID="1066665143">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FAD2BEF2-3ECE-41D4-84EB-EB85F82A1D37}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Incantation_DPS" ID="{1820354A-9001-412D-9721-7C40CC68AB95}" ShortID="162080294">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Incantation_DPS" ID="{863EF421-5E7B-496C-91D2-76734DFFD672}">
+									<Language>SFX</Language>
+									<AudioFile>Incantation_DPS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="602854353"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Incantation_DPS" ID="{863EF421-5E7B-496C-91D2-76734DFFD672}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Incantation_Heal" ID="{CDA17C49-A655-4CC9-900B-1C5FCFC2F76E}" ShortID="188086260">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Incantation_Heal" ID="{39723B42-A7FE-4652-B465-5DE9363DBC08}">
+									<Language>SFX</Language>
+									<AudioFile>Incantation_Heal.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="40326321"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Incantation_Heal" ID="{39723B42-A7FE-4652-B465-5DE9363DBC08}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Incantation_Shield" ID="{68275CDA-096D-4991-ABD3-545148162365}" ShortID="158523276">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Incantation_Shield" ID="{FCC9526F-2D58-4BD4-BB69-7B34AC62BEA7}">
+									<Language>SFX</Language>
+									<AudioFile>Incantation_Shield.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1055847135"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Incantation_Shield" ID="{FCC9526F-2D58-4BD4-BB69-7B34AC62BEA7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Incantation_Speed" ID="{7C77C202-E454-4166-8920-DADFB9A9A92B}" ShortID="119630699">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Incantation_Speed" ID="{F73A123D-6DE6-46D9-B0F7-03BDA0A8C52D}">
+									<Language>SFX</Language>
+									<AudioFile>Incantation_Speed.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="227529511"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Incantation_Speed" ID="{F73A123D-6DE6-46D9-B0F7-03BDA0A8C52D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Loot_Rock" ID="{6BB410C8-8F43-4D39-AF9F-8787C7B10DE2}" ShortID="982522993">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{612C4380-692E-4AFA-A502-17BEA470B919}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{21866C5A-96DC-4D05-B7BF-3603843D5939}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Loot_Rock_01" ID="{3DA69439-44D3-42E2-BA6B-11FEE625FA4A}" ShortID="934070416">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Loot_Rock_01" ID="{0E27A31F-EBE5-4355-98B1-069D6F93138D}">
+									<Language>SFX</Language>
+									<AudioFile>Loot_Rock_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="224434560"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Loot_Rock_01" ID="{0E27A31F-EBE5-4355-98B1-069D6F93138D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Loot_Rock_02" ID="{C458C3D7-E9A0-4EC1-9EBF-7632ECC8587E}" ShortID="510006444">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Loot_Rock_02" ID="{93EB59FB-46D0-43A6-AA0E-EC74509D2F8F}">
+									<Language>SFX</Language>
+									<AudioFile>Loot_Rock_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="355346067"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Loot_Rock_02" ID="{93EB59FB-46D0-43A6-AA0E-EC74509D2F8F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Loot_Rock_03" ID="{7F6791A4-4087-40D8-8C47-5BAAB3216FD6}" ShortID="248745434">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB5696E4-85DA-452C-8282-F42CD8CF9128}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{A740F1F9-20FA-4FAF-B40A-CA30383A3188}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Loot_Rock_03" ID="{326FB645-9C2E-49D3-8A4D-746E3B53F80F}">
+									<Language>SFX</Language>
+									<AudioFile>Loot_Rock_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1029345244"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Loot_Rock_03" ID="{326FB645-9C2E-49D3-8A4D-746E3B53F80F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

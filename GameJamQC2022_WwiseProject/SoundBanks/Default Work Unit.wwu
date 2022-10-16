@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A5CE6D6A-48F1-4FD8-9B9F-AAEA5B96535E}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{A5CE6D6A-48F1-4FD8-9B9F-AAEA5B96535E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A5CE6D6A-48F1-4FD8-9B9F-AAEA5B96535E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{74C2F369-12D5-4FCF-82EF-BDB59449B23E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Loot_Worms" ID="{0B85A9B4-702F-42DE-BAD8-1AB8AE5F7B18}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Gathering_Citrouille_Start" ID="{D498EFC1-1C0C-446A-B294-9AD142A9C1F6}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Music_Menu" ID="{4D9A14A8-9355-47EB-A328-E62B26DFFAAB}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Gathering" ID="{940B3866-E4EE-4890-B77A-8F222095AD8B}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Voice_Line" ID="{02286D9A-5964-4AA3-A620-5AFEF97C6384}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Gathering_Tombe" ID="{8D11FD12-E44C-4B09-B894-ED79DD481ACD}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Loot_Rocks" ID="{97DE3044-66E0-4C04-960B-3C40A005A6B9}" WorkUnitID="{03132045-757E-4602-8086-86F71679A01A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

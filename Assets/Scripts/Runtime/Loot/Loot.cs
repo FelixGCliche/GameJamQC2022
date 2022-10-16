@@ -32,6 +32,7 @@ namespace Runtime.Interaction.Loot
     public void OnInteractStarted()
     {
       isLooting = true;
+AkSoundEngine.PostEvent("Play_Gathering_Tombe", gameObject);
     }
 
     public void OnInteractFinished()
@@ -44,6 +45,7 @@ namespace Runtime.Interaction.Loot
     {
       Debug.Log("Looting canceled");
       ResetInteraction();
+AkSoundEngine.PostEvent("Stop_Gathering", gameObject);
     }
 
     public void MoveToBlock(TerrainBlock block)

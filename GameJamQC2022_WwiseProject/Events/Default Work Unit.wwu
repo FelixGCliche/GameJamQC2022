@@ -1,6 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{03132045-757E-4602-8086-86F71679A01A}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{03132045-757E-4602-8086-86F71679A01A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{03132045-757E-4602-8086-86F71679A01A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Music_Menu" ID="{4D9A14A8-9355-47EB-A328-E62B26DFFAAB}">
+					<ChildrenList>
+						<Action Name="" ID="{BF94E4A8-50D2-4A2A-B266-46AD4BAC4AFE}" ShortID="30563893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Menu" ID="{C44444BE-0DB9-44A3-BB70-D4DDBD288EEE}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Gathering_Tombe" ID="{8D11FD12-E44C-4B09-B894-ED79DD481ACD}">
+					<ChildrenList>
+						<Action Name="" ID="{6424AF3D-30DA-4EC1-85CF-9B8FCC932488}" ShortID="96969034">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Gathering_Tombe" ID="{271D430F-0F4B-47BF-9B61-8A19680032F9}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BED1C61E-7E5B-4544-9F7B-B94831FACAFE}" ShortID="134330848">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loot_Rock" ID="{6BB410C8-8F43-4D39-AF9F-8787C7B10DE2}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Gathering_Citrouille_Start" ID="{D498EFC1-1C0C-446A-B294-9AD142A9C1F6}">
+					<ChildrenList>
+						<Action Name="" ID="{8F24EBA1-0AE0-4E1C-A028-4B9020E9310B}" ShortID="853470930">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Gathering_Citrouille_Start" ID="{F5D74C3B-1007-49C3-AD1B-A49055D6B98A}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CFAC3C4E-4BE9-46BF-9363-79365D2A13A5}" ShortID="679911025">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Loot_Worms" ID="{9215CD43-3866-48F3-9825-FE39E6A800C1}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Loot_Rocks" ID="{97DE3044-66E0-4C04-960B-3C40A005A6B9}">
+					<ChildrenList>
+						<Action Name="" ID="{062F22DD-7D7A-4A5C-8973-353FC09A7536}" ShortID="941328919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loot_Rock" ID="{6BB410C8-8F43-4D39-AF9F-8787C7B10DE2}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Voice_Line" ID="{02286D9A-5964-4AA3-A620-5AFEF97C6384}">
+					<ChildrenList>
+						<Action Name="" ID="{0739C3C1-F23E-4091-9404-57DE91014A60}" ShortID="31082240">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="4.5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{119D5DD1-3701-484D-B09B-55045601BE2F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-0.5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Voice_Line" ID="{390517B6-11F4-40B8-9DFA-B44EE6C4CE51}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Loot_Worms" ID="{0B85A9B4-702F-42DE-BAD8-1AB8AE5F7B18}">
+					<ChildrenList>
+						<Action Name="" ID="{E5EE9A16-4BEB-40F8-B885-86CC9CBCF8DA}" ShortID="92974179">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Loot_Worms" ID="{9215CD43-3866-48F3-9825-FE39E6A800C1}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Gathering" ID="{940B3866-E4EE-4890-B77A-8F222095AD8B}">
+					<ChildrenList>
+						<Action Name="" ID="{26E07923-633E-42E1-94A4-26A777A9268A}" ShortID="327133874">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Gathering_Citrouille_Start" ID="{F5D74C3B-1007-49C3-AD1B-A49055D6B98A}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7D2DE577-0D39-4D3A-AFB8-0C31A1257155}" ShortID="431422377">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Gathering_Tombe" ID="{271D430F-0F4B-47BF-9B61-8A19680032F9}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3A660F9E-9BE4-40F6-9A2E-B7A4E738428A}" ShortID="1049244382">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loot_Rock" ID="{6BB410C8-8F43-4D39-AF9F-8787C7B10DE2}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{940E8274-C89F-499F-8CCD-39588DB09366}" ShortID="472821114">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Loot_Worms" ID="{9215CD43-3866-48F3-9825-FE39E6A800C1}" WorkUnitID="{617695E5-2D2D-47EC-8B06-44D7835ECF42}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

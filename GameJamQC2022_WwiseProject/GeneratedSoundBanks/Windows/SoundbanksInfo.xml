@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/samueldufour/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GameJamQC2022/GameJamQC2022_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/samueldufour/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GameJamQC2022/GameJamQC2022_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/samueldufour/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GameJamQC2022/GameJamQC2022_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/samueldufour/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Desktop/GameJamQC2022/GameJamQC2022_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1794866950">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4060562849" Name="Play_Gathering_Citrouille_Start" ObjectPath="\Events\Default Work Unit\Play_Gathering_Citrouille_Start" DurationType="OneShot" DurationMin="1.766902" DurationMax="1.932838">
+					<IncludedMemoryFiles>
+						<File Id="52942692" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_01.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_01_10C4C929.wem</Path>
+						</File>
+						<File Id="145269413" Language="SFX">
+							<ShortName>Gathering_Citrouille_Start_04.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_Start_04_10C4C929.wem</Path>
+						</File>
+						<File Id="245790339" Language="SFX">
+							<ShortName>Gathering_Citrouille_Start_02.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_Start_02_10C4C929.wem</Path>
+						</File>
+						<File Id="260993076" Language="SFX">
+							<ShortName>Gathering_Citrouille_Start_05.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_Start_05_10C4C929.wem</Path>
+						</File>
+						<File Id="313736213" Language="SFX">
+							<ShortName>Gathering_Citrouille_Start_03.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_Start_03_10C4C929.wem</Path>
+						</File>
+						<File Id="563686103" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_03.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_03_10C4C929.wem</Path>
+						</File>
+						<File Id="723033570" Language="SFX">
+							<ShortName>Gathering_Citrouille_Start_01.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_Start_01_10C4C929.wem</Path>
+						</File>
+						<File Id="820116513" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_02.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2595518563" Name="Play_Gathering_Tombe" ObjectPath="\Events\Default Work Unit\Play_Gathering_Tombe" DurationType="OneShot" DurationMin="1.463316" DurationMax="1.561225">
+					<IncludedMemoryFiles>
+						<File Id="224434560" Language="SFX">
+							<ShortName>Loot_Rock_01.wav</ShortName>
+							<Path>SFX/Loot_Rock_01_10C4C929.wem</Path>
+						</File>
+						<File Id="283243980" Language="SFX">
+							<ShortName>Gathering_Tombe_04.wav</ShortName>
+							<Path>SFX/Gathering_Tombe_04_10C4C929.wem</Path>
+						</File>
+						<File Id="336901510" Language="SFX">
+							<ShortName>Gathering_Tombe_03.wav</ShortName>
+							<Path>SFX/Gathering_Tombe_03_10C4C929.wem</Path>
+						</File>
+						<File Id="355346067" Language="SFX">
+							<ShortName>Loot_Rock_02.wav</ShortName>
+							<Path>SFX/Loot_Rock_02_10C4C929.wem</Path>
+						</File>
+						<File Id="518138631" Language="SFX">
+							<ShortName>Gathering_Tombe_05.wav</ShortName>
+							<Path>SFX/Gathering_Tombe_05_10C4C929.wem</Path>
+						</File>
+						<File Id="653348733" Language="SFX">
+							<ShortName>Gathering_Tombe_02.wav</ShortName>
+							<Path>SFX/Gathering_Tombe_02_10C4C929.wem</Path>
+						</File>
+						<File Id="721138727" Language="SFX">
+							<ShortName>Gathering_Tombe_01.wav</ShortName>
+							<Path>SFX/Gathering_Tombe_01_10C4C929.wem</Path>
+						</File>
+						<File Id="1029345244" Language="SFX">
+							<ShortName>Loot_Rock_03.wav</ShortName>
+							<Path>SFX/Loot_Rock_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2974470319" Name="Play_Loot_Rocks" ObjectPath="\Events\Default Work Unit\Play_Loot_Rocks" DurationType="OneShot" DurationMin="0.463316" DurationMax="0.561225">
+					<IncludedMemoryFiles>
+						<File Id="224434560" Language="SFX">
+							<ShortName>Loot_Rock_01.wav</ShortName>
+							<Path>SFX/Loot_Rock_01_10C4C929.wem</Path>
+						</File>
+						<File Id="355346067" Language="SFX">
+							<ShortName>Loot_Rock_02.wav</ShortName>
+							<Path>SFX/Loot_Rock_02_10C4C929.wem</Path>
+						</File>
+						<File Id="1029345244" Language="SFX">
+							<ShortName>Loot_Rock_03.wav</ShortName>
+							<Path>SFX/Loot_Rock_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4173997865" Name="Play_Loot_Worms" ObjectPath="\Events\Default Work Unit\Play_Loot_Worms" DurationType="OneShot" DurationMin="0.766902" DurationMax="0.932838">
+					<IncludedMemoryFiles>
+						<File Id="52942692" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_01.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_01_10C4C929.wem</Path>
+						</File>
+						<File Id="563686103" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_03.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_03_10C4C929.wem</Path>
+						</File>
+						<File Id="820116513" Language="SFX">
+							<ShortName>Gathering_Citrouille_End_02.wav</ShortName>
+							<Path>SFX/Gathering_Citrouille_End_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\Play_Music_Menu" DurationType="OneShot" DurationMin="65." DurationMax="65.">
+					<IncludedMemoryFiles>
+						<File Id="328949923" Language="SFX">
+							<ShortName>Music_Menu.wav</ShortName>
+							<Path>SFX/Music_Menu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2549704765" Name="Play_Voice_Line" ObjectPath="\Events\Default Work Unit\Play_Voice_Line" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="40326321" Language="SFX">
+							<ShortName>Incantation_Heal.wav</ShortName>
+							<Path>SFX/Incantation_Heal_10C4C929.wem</Path>
+						</File>
+						<File Id="227529511" Language="SFX">
+							<ShortName>Incantation_Speed.wav</ShortName>
+							<Path>SFX/Incantation_Speed_10C4C929.wem</Path>
+						</File>
+						<File Id="602854353" Language="SFX">
+							<ShortName>Incantation_DPS.wav</ShortName>
+							<Path>SFX/Incantation_DPS_10C4C929.wem</Path>
+						</File>
+						<File Id="1055847135" Language="SFX">
+							<ShortName>Incantation_Shield.wav</ShortName>
+							<Path>SFX/Incantation_Shield_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3459306323" Name="Stop_Gathering" ObjectPath="\Events\Default Work Unit\Stop_Gathering" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

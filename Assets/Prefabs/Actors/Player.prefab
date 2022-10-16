@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1108810600544416157}
   - component: {fileID: 8649135350654716352}
   - component: {fileID: 7736351577652380666}
+  - component: {fileID: 8465732203305971129}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2745379513630993402}
+  - {fileID: 1863472773590567040}
   - {fileID: 675175132120549326}
   - {fileID: 4275651765548122175}
   m_Father: {fileID: 0}
@@ -49,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8d3c52270848c788ee0a4430366d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 1
 --- !u!143 &8649135350654716352
 CharacterController:
   m_ObjectHideFlags: 0
@@ -82,6 +82,88 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8465732203305971129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549086119630950246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3ee632cf-65fb-4332-96b0-9de136e7125d
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow,/Google
+      LLC Stadia Controller rev. A/stick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 415c012a-0706-4f9c-a8b7-2b91d733bea7
+    m_ActionName: Player/Fire[/Keyboard/e,/Google LLC Stadia Controller rev. A/trigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d00bf765-ebe3-4628-88a3-7ff4134b4a24
+    m_ActionName: UI/Navigate[/Google LLC Stadia Controller rev. A/stick/up,/Google
+      LLC Stadia Controller rev. A/stick/down,/Google LLC Stadia Controller rev.
+      A/stick/left,/Google LLC Stadia Controller rev. A/stick/right,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ca0c6923-0126-44ea-95c1-a7917b09a614
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 76583481-1e10-49d2-b336-000bd9d99743
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 89a6fba6-5224-428c-8913-a62b547df531
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ba493300-e313-4dd1-bb54-21ecb7148b17
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 06fa88bc-10ec-4942-b812-6ec3a3b0bdd8
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 825b67de-41d4-4c9c-90a3-5c78d66d624c
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a0b3778a-2034-443e-be1e-7c6374353100
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7765044d-4e3e-4efe-bcbd-63165688051f
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ad40c1cb-2313-4929-a4a3-2805296b8775
+    m_ActionName: UI/TrackedDeviceOrientation
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2466291812130495880
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 10
---- !u!1001 &5606135595611277668
+--- !u!1001 &8217116713313053214
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -220,13 +302,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1072405004346179264, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
-      propertyPath: playerTransform
+      propertyPath: player
       value: 
-      objectReference: {fileID: 1805742449152981114}
+      objectReference: {fileID: 1108810600544416157}
     - target: {fileID: 7770242626590696093, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_Name
-      value: OrthogrpahicCamera
+      value: OrthographicCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -251,12 +333,12 @@ PrefabInstance:
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9659258
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2588191
+      value: 0.13052616
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -271,7 +353,7 @@ PrefabInstance:
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -286,9 +368,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e5f5131a1d30c74a8d95f670307c304, type: 3}
---- !u!4 &2745379513630993402 stripped
+--- !u!4 &1863472773590567040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
     type: 3}
-  m_PrefabInstance: {fileID: 5606135595611277668}
+  m_PrefabInstance: {fileID: 8217116713313053214}
   m_PrefabAsset: {fileID: 0}

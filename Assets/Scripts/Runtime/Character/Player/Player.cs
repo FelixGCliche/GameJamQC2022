@@ -1,4 +1,3 @@
-using Runtime.Utils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,29 +5,42 @@ namespace Runtime.Character.Player
 {
   public class Player : Character
   {
-    [SerializeField]
-    private int playerId = 1;
+    public int PlayerId { get; private set; }
 
-    public int PlayerId => playerId;
-
-    private InputAction moveActions;
+    private PlayerInput playerInput;
+    private InputAction moveAction;
+    private InputAction interactAction;
 
     protected override void Awake()
     {
       base.Awake();
-      
-      moveActions = Inputs.Actions.Player.Move;
-      moveActions.Enable();
+
+      playerInput = GetComponent<PlayerInput>();
+      playerInput.actions.Enable();
+      moveAction = playerInput.actions["Move"];
+      interactAction = playerInput.actions["Interact"];
+      PlayerId = playerInput.playerIndex;
+    }
+
+    private void OnEnable()
+    {
+      interactAction.performed += OnInteract;
     }
 
     private void OnDisable()
     {
-      moveActions.Disable();
+      interactAction.performed -= OnInteract;
+      playerInput.actions.Disable();
     }
 
-    private void Update()
+    private void OnInteract(InputAction.CallbackContext obj)
     {
-      var direction = moveActions.ReadValue<Vector2>();
+      Debug.Log($"Interact {obj}");
+    }
+
+    private void FixedUpdate()
+    {
+      var direction = moveAction.ReadValue<Vector2>();
       Mover.OnPlaneMove(direction);
     }
   }

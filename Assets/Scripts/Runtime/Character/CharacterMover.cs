@@ -28,7 +28,6 @@ namespace Runtime.Character
         yVelocity += Physics.gravity.y;
       
       var acceleration = new Vector3(velocity.x, yVelocity, velocity.y) * Time.deltaTime;
-      Debug.Log(acceleration);
       characterController.Move(acceleration);
     }
   }

@@ -1,4 +1,3 @@
-using Runtime.Utils;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +9,7 @@ namespace Runtime.Character.Player
 
     private PlayerInput playerInput;
     private InputAction moveAction;
+    private InputAction interactAction;
 
     protected override void Awake()
     {
@@ -18,11 +18,27 @@ namespace Runtime.Character.Player
       playerInput = GetComponent<PlayerInput>();
       playerInput.actions.Enable();
       moveAction = playerInput.actions["Move"];
+      interactAction = playerInput.actions["Interact"];
       PlayerId = playerInput.playerIndex;
-      Debug.Log(PlayerId);
     }
 
-    private void Update()
+    private void OnEnable()
+    {
+      interactAction.performed += OnInteract;
+    }
+
+    private void OnDisable()
+    {
+      interactAction.performed -= OnInteract;
+      playerInput.actions.Disable();
+    }
+
+    private void OnInteract(InputAction.CallbackContext obj)
+    {
+      Debug.Log($"Interact {obj}");
+    }
+
+    private void FixedUpdate()
     {
       var direction = moveAction.ReadValue<Vector2>();
       Mover.OnPlaneMove(direction);

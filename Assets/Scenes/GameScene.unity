@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2160.4033, g: 2264.6074, b: 3288.0781, a: 1}
+  m_IndirectSpecularColor: {r: 2159.5771, g: 2265.3633, b: 3293.9453, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -133,6 +133,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0436132f0e8d4eb1bb392b5943a024d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &479395593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1020890881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5a268e463a54b1d974ac8aa2f1732ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &564796945
@@ -260,27 +272,27 @@ PrefabInstance:
     - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: scale
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: scale
-      value: 7.3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: width
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: height
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: dirtMaxHeight
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4531133189828675011, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
@@ -359,6 +371,7 @@ GameObject:
   - component: {fileID: 1392388070}
   - component: {fileID: 1392388069}
   - component: {fileID: 1392388071}
+  - component: {fileID: 1392388072}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -390,7 +403,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2077425290}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -439,6 +453,26 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1392388072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392388068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de271d6e382547fe8abc244db2681284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tombstonePoolSize: 25
+  pumpkinPoolSize: 25
+  tombstonePrefab: {fileID: 7263410629408045564, guid: 13f706f73088263459c5a5dc535128ac,
+    type: 3}
+  pumpkinPrefab: {fileID: 3457608745390536996, guid: dcfc5f7ffac5f174e95d4439ad4b71ed,
+    type: 3}
+  terrainGrid: {fileID: 479395593}
+  lootContainer: {fileID: 2077425290}
 --- !u!1 &1634695641
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,4 +599,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077425289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077425290}
+  m_Layer: 0
+  m_Name: LootContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077425290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077425289}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1392388070}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

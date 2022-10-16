@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Runtime.Controller;
 using Runtime.Interaction;
 using Runtime.Interaction.Loot;
@@ -32,6 +34,17 @@ namespace Runtime.Character.Player
 
       lootSensor = Sensor.For<Loot>();
       craftingSensor = Sensor.For<CraftingController>();
+    }
+
+    private void Start()
+    {
+      name = PlayerId switch
+      {
+        0 => "GathererPlayer",
+        1 => "CrafterPlayer",
+        _ => name
+      };
+      Debug.Log("player start");
     }
 
     private void OnEnable()

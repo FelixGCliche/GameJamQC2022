@@ -1,6 +1,8 @@
 using System;
 using Runtime.Enum;
+using Runtime.Event;
 using Runtime.Interaction.Interactable;
+using Runtime.Terrain;
 using UnityEngine;
 
 namespace Runtime.Interaction.Loot
@@ -24,7 +26,6 @@ namespace Runtime.Interaction.Loot
     private void Awake()
     {
       lootDrops = GetComponentsInChildren<LootDropGenerator>();
-      Debug.Log(lootDrops.Length);
       ResetInteraction();
     }
 
@@ -45,18 +46,24 @@ namespace Runtime.Interaction.Loot
       ResetInteraction();
     }
 
+    public void MoveToBlock(TerrainBlock block)
+    {
+      transform.position = block.Pivot;
+      gameObject.SetActive(true);
+    }
+
     private void Update()
     {
-      if (isLooting)
-      {
-        elapsedTime += Time.deltaTime / lootDuration;
-        if(LootingComplete)
-          OnLoot();
-      }
+      if (!isLooting) 
+        return;
+      elapsedTime += Time.deltaTime / lootDuration;
+      if(LootingComplete)
+        OnLoot();
     }
 
     private void OnLoot()
     {
+      OnLootedEvent.Publish(this);
       foreach (var drop in lootDrops)
         drop.GenerateDrop();
       

@@ -15,8 +15,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
+        type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
@@ -26,7 +36,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.115
+      value: 0.223
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
@@ -46,12 +56,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
@@ -66,7 +76,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2f960353f3a81ad4da7bb27b6ff8b0a1,
         type: 3}
@@ -231,5 +241,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4867212, y: 0.8403829, z: 0.20817381}
-  m_Center: {x: 0.000000014901161, y: 0.41782144, z: 0.007824421}
+  m_Size: {x: 0.40783033, y: 1.6914923, z: 0.9689541}
+  m_Center: {x: 0.0131485015, y: 0.84337616, z: -0.0032013655}

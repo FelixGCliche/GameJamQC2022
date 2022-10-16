@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using Runtime.Interaction;
 using Runtime.Interaction.Loot;
 using UnityEngine;
@@ -62,6 +61,7 @@ namespace Runtime.Character.Player
         return;
       
       var current = SensedLoot[0];
+      Debug.Log(current.LootType);
       
       if(context.ReadValueAsButton())
         current.OnInteractStarted();

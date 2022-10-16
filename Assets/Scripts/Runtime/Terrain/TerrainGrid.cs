@@ -5,6 +5,7 @@ using Runtime.Enum;
 using Runtime.Generator;
 using Runtime.Utils;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Runtime.Terrain
 {
@@ -78,6 +79,20 @@ namespace Runtime.Terrain
 
     public IEnumerable<TerrainBlock> GrassBlocks => EnumerateBlockType(TerrainType.Grass);
     public IEnumerable<TerrainBlock> DirtBlocks => EnumerateBlockType(TerrainType.Dirt);
+
+    public TerrainBlock GetRandomGrassBlock()
+    {
+      var grass = GrassBlocks.ToArray();
+      var index = Mathf.FloorToInt(grass.Length * Random.value);
+      return grass[index];
+    }
+
+    public TerrainBlock GetRandomDirtBlock()
+    {
+      var dirt = DirtBlocks.ToArray();
+      var index = Mathf.FloorToInt(dirt.Length * Random.value);
+      return dirt[index];
+    }
 
     private Mesh CreateEmptyTerrainMesh(string meshName, Material meshMaterial)
     {

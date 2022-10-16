@@ -2,6 +2,8 @@ namespace Runtime.Interaction.Interactable
 {
   public interface IInteractable
   {
-    void OnInteract();
+    void OnInteractStarted();
+    void OnInteractFinished();
+    void OnInteractCanceled();
   }
 }

@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+using System.Linq;
+using Runtime.Interaction;
+using Runtime.Interaction.Loot;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +14,9 @@ namespace Runtime.Character.Player
     private PlayerInput playerInput;
     private InputAction moveAction;
     private InputAction interactAction;
+    
+    private ISensor<Loot> lootSensor;
+    public IReadOnlyList<Loot> SensedLoot => lootSensor.SensedObjects;
 
     protected override void Awake()
     {
@@ -20,27 +27,52 @@ namespace Runtime.Character.Player
       moveAction = playerInput.actions["Move"];
       interactAction = playerInput.actions["Interact"];
       PlayerId = playerInput.playerIndex;
+
+      lootSensor = Sensor.For<Loot>();
     }
 
     private void OnEnable()
     {
       interactAction.performed += OnInteract;
+      lootSensor.OnSensedObject += OnSensedLoot;
+      lootSensor.OnUnsensedObject += OnUnsensedLoot;
     }
 
     private void OnDisable()
     {
       interactAction.performed -= OnInteract;
+      lootSensor.OnSensedObject -= OnSensedLoot;
+      lootSensor.OnUnsensedObject -= OnUnsensedLoot;
       playerInput.actions.Disable();
     }
 
-    private void OnInteract(InputAction.CallbackContext obj)
+    private void OnSensedLoot(Loot loot)
     {
-      Debug.Log($"Interact {obj}");
+      Debug.Log($"{loot.LootType} in range");
     }
 
-    private void FixedUpdate()
+    private void OnUnsensedLoot(Loot loot)
+    {
+      Debug.Log($"{loot.LootType} out of range");
+    }
+
+    private void OnInteract(InputAction.CallbackContext context)
+    {
+      if(SensedLoot.Count <= 0)
+        return;
+      
+      var current = SensedLoot[0];
+      
+      if(context.ReadValueAsButton())
+        current.OnInteractStarted();
+      else
+        current.OnInteractFinished();
+    }
+
+    private void Update()
     {
       var direction = moveAction.ReadValue<Vector2>();
+      
       Mover.OnPlaneMove(direction);
     }
   }

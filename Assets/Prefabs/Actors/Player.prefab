@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1108810600544416157}
   - component: {fileID: 8649135350654716352}
   - component: {fileID: 7736351577652380666}
+  - component: {fileID: 4894644277357676980}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -31,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2745379513630993402}
+  - {fileID: 1863472773590567040}
   - {fileID: 675175132120549326}
   - {fileID: 4275651765548122175}
   m_Father: {fileID: 0}
@@ -49,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8d3c52270848c788ee0a4430366d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 1
 --- !u!143 &8649135350654716352
 CharacterController:
   m_ObjectHideFlags: 0
@@ -82,6 +82,37 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4894644277357676980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549086119630950246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_NotificationBehavior: 3
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2466291812130495880
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 10
---- !u!1001 &5606135595611277668
+--- !u!1001 &8217116713313053214
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -218,15 +249,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1805742449152981114}
     m_Modifications:
-    - target: {fileID: -1072405004346179264, guid: 5e5f5131a1d30c74a8d95f670307c304,
-        type: 3}
-      propertyPath: playerTransform
-      value: 
-      objectReference: {fileID: 1805742449152981114}
     - target: {fileID: 7770242626590696093, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_Name
-      value: OrthogrpahicCamera
+      value: OrthographicCamera
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -251,12 +277,12 @@ PrefabInstance:
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9659258
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.2588191
+      value: 0.13052616
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -271,7 +297,7 @@ PrefabInstance:
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 30
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
         type: 3}
@@ -286,9 +312,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e5f5131a1d30c74a8d95f670307c304, type: 3}
---- !u!4 &2745379513630993402 stripped
+--- !u!4 &1863472773590567040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7770242626590696094, guid: 5e5f5131a1d30c74a8d95f670307c304,
     type: 3}
-  m_PrefabInstance: {fileID: 5606135595611277668}
+  m_PrefabInstance: {fileID: 8217116713313053214}
   m_PrefabAsset: {fileID: 0}

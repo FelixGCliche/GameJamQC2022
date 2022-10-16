@@ -6,29 +6,25 @@ namespace Runtime.Character.Player
 {
   public class Player : Character
   {
-    [SerializeField]
-    private int playerId = 1;
+    public int PlayerId { get; private set; }
 
-    public int PlayerId => playerId;
-
-    private InputAction moveActions;
+    private PlayerInput playerInput;
+    private InputAction moveAction;
 
     protected override void Awake()
     {
       base.Awake();
-      
-      moveActions = Inputs.Actions.Player.Move;
-      moveActions.Enable();
-    }
 
-    private void OnDisable()
-    {
-      moveActions.Disable();
+      playerInput = GetComponent<PlayerInput>();
+      playerInput.actions.Enable();
+      moveAction = playerInput.actions["Move"];
+      PlayerId = playerInput.playerIndex;
+      Debug.Log(PlayerId);
     }
 
     private void Update()
     {
-      var direction = moveActions.ReadValue<Vector2>();
+      var direction = moveAction.ReadValue<Vector2>();
       Mover.OnPlaneMove(direction);
     }
   }

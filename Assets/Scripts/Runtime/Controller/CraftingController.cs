@@ -1,6 +1,4 @@
 using Runtime.Crafting;
-using Runtime.Interaction.Interactable;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Runtime.Controller

@@ -1,6 +1,6 @@
 namespace Runtime.Enum
 {
-  public enum LootDropType
+  public enum CraftingComponentType
   {
     None, 
     Bone,

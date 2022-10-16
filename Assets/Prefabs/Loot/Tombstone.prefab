@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb87aa19140415097cc1f9ec996a3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootDropType: 3
+  craftingComponentType: 3
   dropChance: 1
   minMax: {x: 2, y: 5}
 --- !u!114 &2633503226449216571
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb87aa19140415097cc1f9ec996a3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lootDropType: 1
+  craftingComponentType: 1
   dropChance: 0.1
   minMax: {x: 1, y: 3}
 --- !u!1 &7263410629408045565 stripped

@@ -7,7 +7,7 @@ namespace Runtime.Interaction.Loot
   public class LootDropGenerator : MonoBehaviour
   {
     [SerializeField]
-    private LootDropType lootDropType = LootDropType.None;
+    private CraftingComponentType craftingComponentType = CraftingComponentType.None;
 
     [SerializeField]
     [Range(0.01f, 1f)]
@@ -18,19 +18,15 @@ namespace Runtime.Interaction.Loot
 
     public void GenerateDrop()
     {
-      Debug.Log($"Generating {lootDropType}");
       var rnd = Random.value;
       
-      Debug.Log($"{dropChance}, {rnd}");
       if (rnd >= dropChance) 
         return;
       
       var range = minMax.y - minMax.x;
       var count = minMax.x + Mathf.RoundToInt(range * rnd);
       
-      Debug.Log($"{lootDropType} +{count}");
-      
-      InventoryUpdatedEvent.Publish(new InventoryUpdateEventArgs(lootDropType, count));
+      InventoryUpdatedEvent.Publish(new InventoryUpdateEventArgs(craftingComponentType, count));
     }
   }
 }

@@ -63,11 +63,11 @@ namespace Runtime.Interaction.Loot
 
     private void OnLoot()
     {
-      OnLootedEvent.Publish(this);
       foreach (var drop in lootDrops)
         drop.GenerateDrop();
       
       Debug.Log("Looting finished");
+      OnLootedEvent.Publish(this);
       ResetInteraction();
     }
 

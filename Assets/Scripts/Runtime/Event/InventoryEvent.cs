@@ -6,12 +6,12 @@ namespace Runtime.Event
 {
     public struct InventoryUpdateEventArgs
     {
-      public LootDropType LootDropType { get; private set; }
+      public CraftingComponentType CraftingComponentType { get; private set; }
       public int Count { get; private set; }
 
-      public InventoryUpdateEventArgs(LootDropType lootDropType, int count)
+      public InventoryUpdateEventArgs(CraftingComponentType craftingComponentType, int count)
       {
-        LootDropType = lootDropType;
+        CraftingComponentType = craftingComponentType;
         Count = count;
       }
     }

@@ -40,11 +40,14 @@ namespace Runtime.Character.Player
     {
       name = PlayerId switch
       {
-        0 => "GathererPlayer",
-        1 => "CrafterPlayer",
+        0 => "CrafterPlayer",
+        1 => "GathererPlayer",
         _ => name
       };
-      Debug.Log("player start");
+        var spawnPosition = new Vector3(200f, 1, 200f);
+
+        gameObject.transform.DOMove(spawnPosition, 0.1f, snapping: true);
+        Debug.Log($"Player {PlayerId} spawned at {spawnPosition}");
     }
 
     private void OnEnable()
@@ -92,9 +95,9 @@ namespace Runtime.Character.Player
 
     private void OnInteractPerformed(InputAction.CallbackContext context)
     {
-      if(PlayerId == 0)
-        OnLootInteraction(context);
       if(PlayerId == 1)
+        OnLootInteraction(context);
+      if(PlayerId == 0)
         OnCraftingInteraction(context);
     }
 

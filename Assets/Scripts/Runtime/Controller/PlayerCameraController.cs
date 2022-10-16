@@ -32,11 +32,11 @@ namespace Runtime.Controller
             cameraTransform = transform;
             initialRotation = cameraTransform.rotation;
             
-            if (player.PlayerId == 0)
+            if (player.PlayerId == 1)
             {
                 playerCamera.rect = new Rect(0f, 0f, 0.5f, 1f );
             }
-            else if(player.PlayerId == 1)
+            else if(player.PlayerId == 0)
             {
                 playerCamera.rect = new Rect(0.5f, 0f, 0.5f, 1f );
             }

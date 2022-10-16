@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.5771, g: 2265.3633, b: 3293.9453, a: 1}
+  m_IndirectSpecularColor: {r: 2159.665, g: 2263.584, b: 3286.586, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -204,6 +204,36 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8535535
+      objectReference: {fileID: 0}
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.35355338
+      objectReference: {fileID: 0}
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.35355338
+      objectReference: {fileID: 0}
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1464466
+      objectReference: {fileID: 0}
+    - target: {fileID: 612467620428459430, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
     - target: {fileID: 612467620796909292, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: m_Name
@@ -272,6 +302,16 @@ PrefabInstance:
     - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: scale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: dirtBlockHeight
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
+        type: 3}
+      propertyPath: grassBlockHeight
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,

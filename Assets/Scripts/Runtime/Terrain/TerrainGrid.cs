@@ -27,14 +27,14 @@ namespace Runtime.Terrain
     [SerializeField] 
     private Material grassMaterial = null;
     [SerializeField] 
-    [Range(1, 10)]
+    [Range(0.1f, 1f)]
     private float grassBlockHeight = 0.3f;
     
     [Header("Dirt")] 
     [SerializeField] 
     private Material dirtMaterial = null;
     [SerializeField] 
-    [Range(1, 10)]
+    [Range(0.1f, 1f)]
     private float dirtBlockHeight = 0.2f; 
 
     private GameObject terrainRoot;

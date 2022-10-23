@@ -8,17 +8,17 @@ namespace Runtime.Controller
 {
   public class InventoryController : MonoBehaviour
   {
-    private Dictionary<LootDropType, int> lootDropInventory;
-    public IReadOnlyDictionary<LootDropType, int> LootDropInventory => lootDropInventory;
+    private Dictionary<CraftingComponentType, int> craftingComponentInventory;
+    public IReadOnlyDictionary<CraftingComponentType, int> CraftingComponentInventory => craftingComponentInventory;
 
     private void Awake()
     {
-      lootDropInventory = new Dictionary<LootDropType, int>();
+      craftingComponentInventory = new Dictionary<CraftingComponentType, int>();
 
-      foreach (LootDropType key in System.Enum.GetValues(typeof(LootDropType)))
+      foreach (CraftingComponentType key in System.Enum.GetValues(typeof(CraftingComponentType)))
       {
-        if(key != LootDropType.None)
-          lootDropInventory.Add(key, 0);
+        if(key != CraftingComponentType.None)
+          craftingComponentInventory.Add(key, 0);
       }
     }
 
@@ -29,8 +29,8 @@ namespace Runtime.Controller
 
     private void OnInventoryUpdated(InventoryUpdateEventArgs args)
     {
-      lootDropInventory[args.LootDropType] += args.Count;
-      Debug.Log($"You have {lootDropInventory[args.LootDropType]} {args.LootDropType}");
+      craftingComponentInventory[args.CraftingComponentType] += args.Count;
+      Debug.Log($"You have {craftingComponentInventory[args.CraftingComponentType]} {args.CraftingComponentType}");
     }
   }
 }

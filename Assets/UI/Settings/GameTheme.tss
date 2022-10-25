@@ -1,0 +1,7 @@
+@import url("unity-theme://default");
+
+@import url("/Assets/UI/Style/Global/main.uss");
+@import url("/Assets/UI/Style/Global/color.uss");
+
+
+VisualElement {}

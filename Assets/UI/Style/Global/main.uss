@@ -1,0 +1,11 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+.unity-group-box {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}

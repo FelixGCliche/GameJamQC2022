@@ -1,0 +1,7 @@
+:root {
+  --primary: #001B42;
+  --secondary: #70D1F1;
+  --tertiary: #FF4852;
+  --text-light: #FFFFFF;
+  --text-dark: #000000;
+}

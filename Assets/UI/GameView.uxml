@@ -1,9 +1,8 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/Style/Inventory/InventoryItem.uss?fileID=7433441132597879392&amp;guid=e31d4dcaedcb15a4daa88c12193e259e&amp;type=3#InventoryItem" />
-    <ui:GroupBox style="flex-direction: row;">
-        <UI.Components.Inventory.InventoryItem />
-        <UI.Components.Inventory.InventoryItem />
-        <UI.Components.Inventory.InventoryItem />
-        <UI.Components.Inventory.InventoryItem />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:GroupBox name="inventory" style="align-items: auto; flex-direction: row; justify-content: center;">
+        <UI.Components.Inventory.InventoryItem name="inventory-grass" ItemType="Grass" focusable="false" style="background-image: url(&apos;project://database/Assets/Sprites/GrassIcon.png?fileID=2800000&amp;guid=54983444a82e62b4f9e275b09ee0261c&amp;type=3#GrassIcon&apos;);" />
+        <UI.Components.Inventory.InventoryItem name="inventory-pumpkin" ItemType="Pumpkin" style="background-image: url(&apos;project://database/Assets/Sprites/PumpkinIcon.png?fileID=2800000&amp;guid=37080eeb5839cc944bd8ac3c2fbac267&amp;type=3#PumpkinIcon&apos;);" />
+        <UI.Components.Inventory.InventoryItem name="inventory-rock" ItemType="Rock" style="background-image: url(&apos;project://database/Assets/Sprites/RockIcon.png?fileID=2800000&amp;guid=1e7c6efe84b1f674fa0db6c44ae42da3&amp;type=3#RockIcon&apos;);" />
+        <UI.Components.Inventory.InventoryItem name="inventory-worm" ItemType="Worm" style="background-image: url(&apos;project://database/Assets/Sprites/WormIcon.png?fileID=2800000&amp;guid=5b42f9b7fc84f5442be1f9feb46174ea&amp;type=3#WormIcon&apos;);" />
     </ui:GroupBox>
 </ui:UXML>

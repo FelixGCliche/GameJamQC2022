@@ -4,6 +4,7 @@ using DG.Tweening;
 using Runtime.Controller;
 using Runtime.Interaction;
 using Runtime.Interaction.Loot;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,8 @@ namespace Runtime.Character.Player
 {
   public class Player : Character
   {
+    [SerializeField]
+    private Transform playerMesh;
     public int PlayerId { get; private set; }
 
     private PlayerInput playerInput;
@@ -22,10 +25,12 @@ namespace Runtime.Character.Player
     public IReadOnlyList<Loot> SensedLoot => lootSensor.SensedObjects;
     public IReadOnlyList<CraftingController> SensedCraft => craftingSensor.SensedObjects;
 
+    private Transform meshTransform;
+
     protected override void Awake()
     {
       base.Awake();
-
+      
       playerInput = GetComponent<PlayerInput>();
       playerInput.actions.Enable();
       moveAction = playerInput.actions["Move"];
@@ -47,7 +52,6 @@ namespace Runtime.Character.Player
         var spawnPosition = new Vector3(200f, 1, 200f);
 
         gameObject.transform.DOMove(spawnPosition, 0.1f, snapping: true);
-        Debug.Log($"Player {PlayerId} spawned at {spawnPosition}");
     }
 
     private void OnEnable()
@@ -75,22 +79,18 @@ namespace Runtime.Character.Player
 
     private void OnSensedCrafter(CraftingController crafting)
     {
-      Debug.Log($"{crafting.name} in range");
     }
 
     private void OnUnsensedCrafter(CraftingController crafting)
     {
-      Debug.Log($"{crafting.name} in range");
     }
 
     private void OnSensedLoot(Loot loot)
     {
-      Debug.Log($"{loot.LootType} in range");
     }
 
     private void OnUnsensedLoot(Loot loot)
     {
-      Debug.Log($"{loot.LootType} out of range");
     }
 
     private void OnInteractPerformed(InputAction.CallbackContext context)
@@ -107,7 +107,6 @@ namespace Runtime.Character.Player
         return;
       
       var current = SensedLoot[0];
-      Debug.Log(current.LootType);
       
       if(context.ReadValueAsButton())
         current.OnInteractStarted();
@@ -117,7 +116,6 @@ namespace Runtime.Character.Player
 
     private void OnCraftingInteraction(InputAction.CallbackContext context)
     {
-      Debug.Log(SensedCraft.Count);
       if(SensedCraft.Count <= 0)
         return;
 
@@ -133,6 +131,20 @@ namespace Runtime.Character.Player
       var direction = moveAction.ReadValue<Vector2>();
       
       Mover.OnPlaneMove(direction);
+      UpdateModelOrientation(direction);
+      // var d = Vector2.SignedAngle(Vector2.up, direction);
+      // Debug.Log(d);
+    }
+
+    private void UpdateModelOrientation(Vector2 direction)
+    {
+      if(direction == Vector2.zero)
+        return;
+
+      var signedAngle = Vector2.SignedAngle(Vector2.up, direction) * -1;
+      Debug.Log(signedAngle);
+      playerMesh.DORotate(new Vector3(0,signedAngle,0), 0.1f);
+
     }
   }
 }

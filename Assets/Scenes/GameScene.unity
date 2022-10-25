@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 67.19922, g: 98.50354, b: 78.821045, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: 55623c1e2d6f79148a13b7fd76be38fe, type: 2}
+  m_PanelSettings: {fileID: 11400000, guid: 37bd52d6ff29947409c56948449d0379, type: 2}
   m_ParentUI: {fileID: 0}
   sourceAsset: {fileID: 9197481963319205126, guid: 5c0ac98109ff3654e8db7d2e5224a83f,
     type: 3}
@@ -345,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: scale
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 978721734901651122, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
@@ -380,12 +380,12 @@ PrefabInstance:
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: width
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
       propertyPath: height
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4504337196431317116, guid: 160ec439e1c6e6d47927d39bfa42e6ae,
         type: 3}
@@ -539,6 +539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32150daaf6a5491eb57aeae709dcb411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  document: {fileID: 564796946}
 --- !u!1001 &1550867724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -707,17 +708,26 @@ MonoBehaviour:
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: f97b164653c367345b64c16db56ff8a0,
     type: 3}
-  m_PointAction: {fileID: 0}
+  m_PointAction: {fileID: 1054132383583890850, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
   m_MoveAction: {fileID: -1246895598473198080, guid: f97b164653c367345b64c16db56ff8a0,
     type: 3}
-  m_SubmitAction: {fileID: 0}
-  m_CancelAction: {fileID: 0}
-  m_LeftClickAction: {fileID: 0}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_SubmitAction: {fileID: -6600076850778250031, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_LeftClickAction: {fileID: -6755377732893780375, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2755210776864694708, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_RightClickAction: {fileID: 658730949846198646, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 1960960291361438975, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: -66048095759414516, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: -3530552465739563461, guid: f97b164653c367345b64c16db56ff8a0,
+    type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0

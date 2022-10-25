@@ -2,11 +2,10 @@ namespace Runtime.Enum
 {
   public enum CraftingComponentType
   {
-    None, 
-    Bone,
-    Candy,
+    None,
+    Grass,
+    Pumpkin,
     Rock,
-    Wing,
     Worm
   }
 }

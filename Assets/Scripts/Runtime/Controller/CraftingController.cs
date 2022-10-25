@@ -15,10 +15,6 @@ namespace Runtime.Controller
     {
       foreach (var component in craftingRecipe.CraftingComponents)
       {
-       Debug.Log($"{component.Key} * {component.Value}"); 
-      }
-      foreach (var component in craftingRecipe.CraftingComponents)
-      {
         var key = component.Key;
         var inventoryValue = inventoryController.CraftingComponentInventory[key];
         var count = component.Value;

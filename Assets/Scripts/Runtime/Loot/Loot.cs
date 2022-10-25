@@ -42,7 +42,6 @@ namespace Runtime.Interaction.Loot
 
     public void OnInteractCanceled()
     {
-      Debug.Log("Looting canceled");
       ResetInteraction();
     }
 
@@ -66,7 +65,6 @@ namespace Runtime.Interaction.Loot
       foreach (var drop in lootDrops)
         drop.GenerateDrop();
       
-      Debug.Log("Looting finished");
       OnLootedEvent.Publish(this);
       ResetInteraction();
     }

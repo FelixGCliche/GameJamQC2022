@@ -1,7 +1,6 @@
 .inventory-item {
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 8px;
     border-color: var(--primary);
     border-width: 8px;
     width: 96px;
@@ -9,21 +8,15 @@
     background-color: var(--secondary);
 }
 
-.inventory-item-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.inventory-item-counter {
+.inventory-item > Label {
     align-items: center;
     justify-content: center;
     width: 32px;
     height: 32px;
     -unity-text-align: middle-center;
-    font-size: 16px;
+    font-size: 24px;
     -unity-font-style: bold;
-    color: var(--secondary);
+    color: var(--text-light);
     -unity-text-outline-width: 1px;
     -unity-text-outline-color: var(--text-dark);
 }

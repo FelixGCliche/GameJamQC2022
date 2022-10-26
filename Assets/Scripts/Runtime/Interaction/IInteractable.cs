@@ -1,4 +1,4 @@
-namespace Runtime.Interaction.Interactable
+namespace Runtime.Interaction
 {
   public interface IInteractable
   {

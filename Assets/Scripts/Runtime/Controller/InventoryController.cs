@@ -24,8 +24,6 @@ namespace Runtime.Controller
       inventoryUI = document.rootVisualElement.Query<InventoryItem>().ToList();
       if (inventoryUI == null || inventoryUI.Count == 0)
         throw new NullReferenceException("Inventory Item list is null");
-      else 
-      inventoryUI.ForEach(i => Debug.Log($"Init {i.ComponentType} * {i.Count}"));
       
       craftingComponentInventory = new Dictionary<CraftingComponentType, int>();
 
@@ -43,12 +41,11 @@ namespace Runtime.Controller
 
     private void OnInventoryUpdated(InventoryUpdateEventArgs args)
     {
-      Debug.Log($"Inventory Updated: {args.CraftingComponentType}");
       var inventoryItem = inventoryUI
         .FirstOrDefault(i=> i.ComponentType == args.CraftingComponentType);
-      // if (inventoryItem == null) 
-      //   return;
       
+      if (inventoryItem == null) 
+        return;
       craftingComponentInventory[args.CraftingComponentType] += args.Count;
       inventoryItem.Count += args.Count;
     }

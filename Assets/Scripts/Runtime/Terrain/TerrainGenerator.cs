@@ -1,10 +1,8 @@
-using System;
 using Runtime.Enum;
-using Runtime.Terrain;
 using Runtime.Utils;
 using UnityEngine;
 
-namespace Runtime.Generator
+namespace Runtime.Terrain
 {
   public class TerrainGenerator : MonoBehaviour
   {

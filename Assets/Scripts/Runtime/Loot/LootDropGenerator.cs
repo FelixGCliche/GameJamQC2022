@@ -2,7 +2,7 @@ using Runtime.Enum;
 using Runtime.Event;
 using UnityEngine;
 
-namespace Runtime.Interaction.Loot
+namespace Runtime.Loot
 {
   public class LootDropGenerator : MonoBehaviour
   {

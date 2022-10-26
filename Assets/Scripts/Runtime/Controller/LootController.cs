@@ -1,7 +1,6 @@
 using System;
 using Runtime.Enum;
 using Runtime.Event;
-using Runtime.Interaction.Loot;
 using Runtime.Terrain;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -19,10 +18,10 @@ namespace Runtime.Controller
     private int pumpkinPoolSize = 25;
     
     [SerializeField]
-    private Loot tombstonePrefab;
+    private Loot.Loot tombstonePrefab;
     
     [SerializeField]
-    private Loot pumpkinPrefab;
+    private Loot.Loot pumpkinPrefab;
     
     [SerializeField]
     private TerrainGrid terrainGrid;
@@ -30,17 +29,17 @@ namespace Runtime.Controller
     [SerializeField]
     private Transform lootContainer;
 
-    private Loot[] tombstonePool;
-    private Loot[] pumpkinPool;
+    private Loot.Loot[] tombstonePool;
+    private Loot.Loot[] pumpkinPool;
 
     private void Awake()
     {
       lootContainer = transform;
 
-      tombstonePool = new Loot[tombstonePoolSize];
+      tombstonePool = new Loot.Loot[tombstonePoolSize];
       Populate(tombstonePool, tombstonePrefab);
       
-      pumpkinPool = new Loot[pumpkinPoolSize];
+      pumpkinPool = new Loot.Loot[pumpkinPoolSize];
       Populate(pumpkinPool, pumpkinPrefab);
     }
 
@@ -54,7 +53,7 @@ namespace Runtime.Controller
       OnLootedEvent.OnPublished -= OnLooted;
     }
 
-    private void OnLooted(Loot loot)
+    private void OnLooted(Loot.Loot loot)
     {
       switch (loot.LootType)
       {
@@ -75,7 +74,7 @@ namespace Runtime.Controller
         MovePumpkin(pumpkin);
     }
 
-    private void Populate(Loot[] pool, Loot prefab)
+    private void Populate(Loot.Loot[] pool, Loot.Loot prefab)
     {
       for (var i = 0; i < pool.Length; i++)
       {
@@ -84,13 +83,13 @@ namespace Runtime.Controller
       }
     }
 
-    private void MoveTombstone(Loot tombstone)
+    private void MoveTombstone(Loot.Loot tombstone)
     {
       var block = terrainGrid.GetRandomDirtBlock();
       tombstone.MoveToBlock(block);
     }
 
-    private void MovePumpkin(Loot pumpkin)
+    private void MovePumpkin(Loot.Loot pumpkin)
     {
       var block = terrainGrid.GetRandomGrassBlock();
       pumpkin.MoveToBlock(block);

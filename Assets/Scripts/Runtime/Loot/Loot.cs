@@ -1,11 +1,10 @@
-using System;
 using Runtime.Enum;
 using Runtime.Event;
-using Runtime.Interaction.Interactable;
+using Runtime.Interaction;
 using Runtime.Terrain;
 using UnityEngine;
 
-namespace Runtime.Interaction.Loot
+namespace Runtime.Loot
 {
   public class Loot : MonoBehaviour, IInteractable
   {
@@ -29,6 +28,15 @@ namespace Runtime.Interaction.Loot
       ResetInteraction();
     }
 
+    private void Update()
+    {
+      if (!isLooting) 
+        return;
+      elapsedTime += Time.deltaTime / lootDuration;
+      if(LootingComplete)
+        OnLoot();
+    }
+
     public void OnInteractStarted()
     {
       isLooting = true;
@@ -49,15 +57,6 @@ namespace Runtime.Interaction.Loot
     {
       transform.position = block.Pivot;
       gameObject.SetActive(true);
-    }
-
-    private void Update()
-    {
-      if (!isLooting) 
-        return;
-      elapsedTime += Time.deltaTime / lootDuration;
-      if(LootingComplete)
-        OnLoot();
     }
 
     private void OnLoot()
